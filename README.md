@@ -1,11 +1,6 @@
-# Flex
-![flex](/src/assets/img/1.png)
-# Grid
-![Grid](/src/assets/img/2.png)
-# Responsive
-![responsive](/src/assets/img/responsive.png)
 
-
+# image
+sitenin görünümlerini assets/img klasöründe bulabilirsiniz
 
 # Mission
 
