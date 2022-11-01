@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main { 
+    display: grid;
+    text-align: center;
+    margin-top: 12px;
+    grid-template-columns: 1fr 2fr 255px;
+    grid-template-rows: 40px 590px 40px  ;
+    height: 93vh;
+    grid-template-areas: 
+    "header header header"
+    "nav content aside"
+    "footer footer footer"
+
+}
+
+header { grid-area: header }
+nav { grid-area: nav }
+.content { grid-area: content }
+aside{ grid-area: aside }
+footer{ grid-area: footer}
+
+.box{
+    display: grid;
+}
+
+
+
+.logo{
+    font-size: 35px;
+    color: rgb(73, 18, 141);
+}
+
+nav, .content{
+    background-color: pink;
+}
+
+.menu-btn{
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.menu button{
+    display: grid;
+    margin-left: 125px;
+    font-size: 25px;
+    width: 180px;
+    transition-duration: 0.4s;
+    background-color: white;
+    border: 2px solid;
+    cursor: pointer;
+
+    
+    
+}
+
+.bg-size {
+    width: 75%;
+    margin-top: 35px;
+    display: grid;
+    justify-content: center;
+}
+.flex{
+    background-color: blue;
+    width: 359px;
+   
+    
+}
+
+label{
+    font-size: 35px;
+    
+}
+
+.btn {
+    margin-top: 32px;
+}
+
+input{
+
+    width: 350px;
+    height: 50px;
+    margin-top: 32px;
+}
+
+.content button{
+    font-size: 25px;
+    width: 180px;
+    height: 50px;
+    transition-duration: 0.4s;
+    background-color: white;
+    border: 2px solid;
+    cursor: pointer;
+
+    
+    
+}
+
+.content button:hover {
+    background-color: rgb(124, 124, 222);
+    
+}
+
+
+
+
+
+aside{
+    background-color: rgb(63, 131, 191);
+    
+}
+
+footer{
+    font-size: 35px;
+}
+
+@media (max-width:1280px)  and (min-width: 600px){
+    body{
+        display: grid;
+        margin: 0;
+        padding: 0;
+        margin-top: 12px;
+        
+   
+    }
+    main{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "header header header"
+        "content content content"
+        "footer footer footer"
+    }
+
+    .bg-size, .logo, .btn{
+        margin-left: auto;
+    }
+
+    aside, .menu{
+        display: none;
+    }
+
+    .logo{
+        margin: auto;
+    }
+ 
+ }
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        display: grid;
+        margin: 0;
+        padding: 0;
+        
+   
+    }
+    main{
+        display: grid;
+        grid-template-columns: 145px 16em 67px;
+        grid-template-areas: 
+        "header header header"
+        "content content content"
+        "footer footer footer"
+    }
+    .bg-size{
+        margin-left: 71px;
+        margin-top: 40px;
+        
+    }
+    aside, .menu{
+        display: none;
+    }
+
+    .btn{
+        display: inline-flex;
+    }
+
+
+  
+
+    
+}

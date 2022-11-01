@@ -1,3 +1,12 @@
+# Flex
+![flex](/src/assets/img/1.png)
+# Grid
+![Grid](/src/assets/img/2.png)
+# Responsive
+![responsive](/src/assets/img/responsive.png)
+
+
+
 # Mission
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.

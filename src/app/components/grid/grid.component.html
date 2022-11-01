@@ -1,1 +1,37 @@
-<p>grid works!</p>
+<body>
+    <main>
+        <header class="box">
+            <a class="logo" [style.background-color]="selectedColor" >Alphastellar </a>
+        </header>
+        <nav class="menu">
+            <div class="menu-btn">
+                <button *ngFor="let item of colorTitle" (click)="selectedColor= item.color" [style.background-color]="selectedColor"  type="button">{{item.color}}</button>
+
+            </div>
+        </nav>
+        <div class="content" >
+            <div class="bg-size" >
+                <div class="flex" [style.background-color]="selectedColor"> 
+                    <label> Grid Page</label>
+                </div>
+    
+                <input  (click)="inputValue = true" type="text" placeholder="TEXT FORM FILED">
+                <input (click)="inputValue = true" type="text" placeholder="TEXT FORM FILED">
+                <input (click)="inputValue = true" type="text" placeholder="TEXT FORM FILED">
+                <input (click)="inputValue = true" type="text" placeholder="TEXT FORM FILED">
+    
+                <div class="btn">
+                    <button (click)="selectedColor= 'white'">Reset</button>
+                    <button [disabled]="!inputValue">Submit</button>
+                </div>
+
+            </div>
+
+        </div>
+        <aside>
+            Aside
+        </aside>
+        <footer [style.background-color]="selectedColor" class="box">© 2022 Ozan Eliçatal</footer>
+    </main>
+    
+</body>
